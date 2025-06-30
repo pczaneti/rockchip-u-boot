@@ -9,7 +9,10 @@
 
 #include <configs/rv1106_common.h>
 
-#define CONFIG_SYS_MMC_ENV_DEV 0
+#define CONFIG_SYS_MMC_ENV_DEV            0
+#define CONFIG_SYS_MMC_ENV_PART           0
+#define CONFIG_SYS_REDUNDAND_ENVIRONMENT
+#define CONFIG_ENV_OFFSET_REDUND  (CONFIG_ENV_OFFSET + CONFIG_ENV_SIZE)
 
 #define ROCKCHIP_DEVICE_SETTINGS \
 			"stdout=serial,vidconsole\0" \

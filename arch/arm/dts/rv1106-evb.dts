@@ -34,3 +34,8 @@
 	u-boot,dm-spl;
 	status = "okay";
 };
+
+&sdmmc {
+	status = "disabled";
+};
+
